@@ -4,7 +4,7 @@ class mycallbacks(keras.callbacks.Callback):
     def on_epoch_end(self, epoch, logs={}):
         if(logs.get('loss')>0.3):
             print("loss less than 30%, so ending the epochs")
-            self.model.stop_train = True
+            self.model.stop_training = True
 
 import keras
 import numpy as np
